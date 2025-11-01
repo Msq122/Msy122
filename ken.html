@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>Oops!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<p>
+This html does not exist.
+</n>
+<a href="https://google.com">Leave </a>
+<y>in<y>
+<meta http-equiv="refresh" content="20; url=https://www.google.com">
+    <script>window.setTimeout(function(){ window.close(); }, 20000);
+</script>
+<html>
+
+</head>
+<body>
+</n>
+ <h10 id="seconds">20 seconds</h10>
+</n>
+  <script>
+    let seconds = 20;
+    const timer = setInterval(() => {
+      seconds--;
+      document.getElementById("seconds").innerText = seconds + " seconds";
+      if (seconds <= 0) {
+        clearInterval(timer);
+        document.getElementById("seconds").innerText = "Now seconds";
+      }
+    }, 1000);
+  </script>
+<style>
+    html,body{
+        background: #292929;
+        color: white;
+        font-family: sans-serif;
+
+    }
+    h1{
+        margin-top: 64px;
+    }
+    </style>
+</body>
+</html>
