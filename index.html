@@ -1,46 +1,39 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Oops!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oops!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="20; url=https://www.google.com">
+  <style>
+    html, body {
+      background: #292929;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      padding-top: 80px;
+    }
+    a {
+      color: #00bfff;
+      text-decoration: none;
+    }
+  </style>
 </head>
 <body>
-<p>
-This html does not exist.
-</n>
-<a href="https://google.com">Leave </a>
-<y>in<y>
-<meta http-equiv="refresh" content="20; url=https://www.google.com">
-    <script>window.setTimeout(function(){ window.close(); }, 20000);
-</script>
-<html>
+  <p>This HTML does not exist.</p>
+  <p>You will leave in <span id="seconds">20</span> seconds.</p>
+  <p><a href="https://google.com">Leave now</a></p>
 
-</head>
-<body>
-</n>
- <h10 id="seconds">20 seconds</h10>
-</n>
   <script>
     let seconds = 20;
     const timer = setInterval(() => {
       seconds--;
-      document.getElementById("seconds").innerText = seconds + " seconds";
+      document.getElementById("seconds").innerText = seconds;
       if (seconds <= 0) {
         clearInterval(timer);
-        document.getElementById("seconds").innerText = "Now seconds";
+        document.getElementById("seconds").innerText = "0";
+        window.close(); // closes tab (only works if user opened it with script)
       }
     }, 1000);
   </script>
-<style>
-    html,body{
-        background: #292929;
-        color: white;
-        font-family: sans-serif;
-
-    }
-    h1{
-        margin-top: 64px;
-    }
-    </style>
 </body>
-
 </html>
